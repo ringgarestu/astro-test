@@ -1,5 +1,10 @@
 ---
-const pageHome = 'HomePage'
+import Footer from "../component/footer.astro";
+
+import Header from "../component/header.astro";
+import "../styles/global.css";
+
+const pageHome = "HomePage";
 ---
 
 <!doctype html>
@@ -10,9 +15,11 @@ const pageHome = 'HomePage'
     <title>{pageHome}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog/">Blog</a>
+    <Header />
     <h1>{pageHome}</h1>
+    <Footer />
+    <script>
+      import "../script/menu.js";
+    </script>
   </body>
 </html>
